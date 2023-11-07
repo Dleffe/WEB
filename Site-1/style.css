@@ -1,0 +1,409 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+   
+
+}
+body {
+   background-color: #bab8b5;
+   
+}
+div.back{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("/imgs/pexels-elīna-arāja-3377405.webp") repeat-y;
+    background-size: contain;
+    opacity: .15;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: rgba(8, 21, 136, 0.96);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    
+    top: 0;
+    width: 100%;
+
+}
+
+#navbar .navbar-container{
+    width:  95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10 0px;
+
+
+}
+
+#navbar .menu-icon{
+    width: 40px;
+    height: 40px;    
+    cursor: pointer;
+    display: none;
+    
+    
+}
+#navbar .menu-icon:hover{
+    color: rgba(8, 21, 136, 0.96) ;
+    background-color: rgba(255, 255, 255, 0.526) ;
+    border-radius: 30%;
+}
+
+
+#navbar .navbar-container .logo{ 
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+   
+    
+}
+
+#navbar .navbar-container ul li a{
+    color: white;
+    text-decoration: none;
+   padding: 0 10px;
+   cursor: pointer;
+    
+}
+#navbar .navbar-container ul li a:hover{
+    color: rgb(141, 139, 139);  
+}
+
+/* Carousel */
+
+
+
+/* Main */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+   
+}
+#main h2{
+    font-size:40px;
+    padding: 10px 0;
+    text-align: center;
+    color: rgb(47, 61, 111)
+}
+#main p{
+    text-indent: 20px;
+    padding-left: 10px;
+  
+}
+
+#main .quemSomos{
+    text-align: justify;
+    justify-content: center;
+    padding: 25px 0px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.289);
+    
+}
+#main .quemSomos p{
+    padding: 3px 10px;
+    
+}
+#main .quemSomos img{
+    padding-top: 30px;
+    
+    padding-right: 20px;
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+
+#main .servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.289);
+   
+}
+#main .servicos section{
+    padding: 5px;
+    padding-left: 30px;
+   
+    
+}
+#main .servicos .left{
+    
+    float: left;
+    width: 50%;
+    border-right: 0.5px solid rgba(255, 255, 255, 0.289);
+    
+    
+}
+#main .servicos .right{
+   float: right;
+   width: 50%;
+    
+}
+#main .servicos .servicos-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 10px;
+    text-indent: 10px;
+    
+}
+#main .servicos .servicos-container:hover{
+    background-color:#989898c6 ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#main .servicos h3{
+    cursor: pointer;
+}
+
+#main .servicos .left img , .right img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+#main .equipe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: center; 
+    
+}
+#main .equipe section{
+    text-align: center;
+   
+}
+
+
+#main .equipe .Dr-giovanni img{
+    float: left;
+    width: 40%;
+    height: auto;
+    padding: 100px 0px;
+    padding-right: 50px;
+}
+#main .equipe .Dra-joelise img{
+    float: right;
+    width: 40%;
+    height: auto;
+    margin: 100px 0px;
+    padding-left: 50px;
+}
+
+
+
+#main .equipe section h3{
+
+    padding: 25px 0px;
+    font-size: 40px;
+    color:  rgb(47, 61, 111);
+}
+
+#main .equipe ul li{
+    list-style: none;
+    margin: 30px 0px;
+    font-size: 25px;
+ 
+}
+#main .equipe ul li:hover{
+    color: rgb(47, 61, 111) ;
+    ;
+ 
+}
+
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(8, 21, 136);
+    padding: 10px 10px;
+    width: 100%;
+   
+
+}
+#footer .footer-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#footer .footer-container .logo-footer{
+    height: 100px;
+    width: auto;
+}
+
+#footer .footer-container section{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#footer .footer-container section span{
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+#footer .footer-container ul li{
+    list-style: none;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#footer .footer-container ul li b{
+    color: rgb(148, 191, 255);
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+#footer .footer-container ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+#footer .footer-container ul li a:hover{
+    color: rgb(148, 191, 255);
+}
+  
+@media  only screen and (max-width: 750px){
+    body{
+        overflow-x: hidden;
+    }
+    #main h2{
+        font-size: 40px;
+    }
+    #main p{
+        font-size: 15px;
+    }
+    
+    #navbar .navbar-container .navbar-items{
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        width: 30vw;
+        height: 92vh;
+        background-color: rgba(8, 21, 136, 0.96);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        
+    }
+    #navbar .navbar-container .navbar-items.active{
+        transform: translateX(0%);
+    }
+    #navbar .menu-icon{
+        display: block;
+    }
+  
+   
+    #navbar .navbar-container .navbar-items li{
+        margin-left: 0;
+        padding-top: 5vw;
+        
+        
+    }
+
+    #main .servicos .servicos-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #main .servicos .servicos-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #main .servicos .left{
+        
+        border-right: none;
+        width: 100%;
+        
+    }
+    #main .servicos .right{
+        width: 100%;
+    }
+   
+    #main .equipe section h3{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    #main .equipe ul li{
+        padding: 0px 0px;
+        font-size: 17px;
+    }
+
+  
+    #footer .footer-container .logo-footer{
+        height: auto;
+        width: 200px;
+        margin-right: 10px;
+    }
+    #footer .footer-container ul li{
+        font-size: 10px;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    #footer .footer-container section span{
+        font-size: 8px;
+        margin-top: 20px;
+        
+    }
+
+}
+
+@media  only screen and (min-width: 1150px){
+    #main {
+        padding: 100px 10%;
+       
+    }
+    #main h2{
+        font-size: 50px;
+    }
+    #main p{
+        font-size: 20px;
+    }
+    #main .servicos .servicos-container{
+        font-size: 20px;
+        
+    }
+    #main .equipe section h3{
+        margin-bottom: 60px;
+        font-size: 60px;
+    }
+    #main .equipe ul li{
+        font-size: 25px;
+    }
+    #footer .footer-container ul li{
+        font-size: 20px;
+        padding-left: 35px;
+        display: inline-flex;
+       flex-direction: column;
+    }
+}

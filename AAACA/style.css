@@ -1,0 +1,443 @@
+/* Style padrao da pag */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFD000;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo da navbar completa */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  
+}
+
+.navbar .logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    margin-left: 30px;
+  
+    
+}
+
+.navbar li {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.navbar li a {
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    font-size: 22px;
+    color: #9F8200;
+    transition: 0.5s;
+    
+}
+
+/* Estilo do corpo principal do site */
+
+main{
+    
+    background-color: #00000000;
+    
+
+}
+
+/* Estilo Sobre AAACA */
+.sobre{
+    padding:30px;
+    padding-top: 20vh;
+    /* background-color: #FFD000; */
+    height:auto;
+    display: flex;
+    background-image: url(../AAACA-EU/imgs/logo\ dog.png);
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: 45%;
+    background-blend-mode: color;
+    background-color: #ffd00063;
+}
+
+.sobre div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+
+
+.sobre div small{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre div p{
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.sobre img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 5px solid #23231b;
+}
+ 
+/* Estilo Parceiros e Associaçoes */
+
+.parceiros-associados{
+    padding: 20px;
+    background-color: #23231b;
+    color:#FFD000;
+    width:100%;
+    height:auto;
+    text-align: center; 
+    
+  
+}
+
+.parceiros-associados h1{
+    
+    margin: 20px;
+    
+}
+
+.parceiros-associados .slider{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 400px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 400px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 2px solid #FFD000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #FFD000;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #FFD000;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top:380px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FFD000;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FFD000;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FFD000;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #FFD000;
+}
+
+/* Estilo Seja um associado */
+
+.associado{
+    display: flex;  
+    padding: 20px;
+    
+}
+.associado div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2px;
+}
+
+.associado div h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.associado div ul{
+   list-style: none;
+   font-size: larger;
+   color: #000;
+}
+
+.associado div ul li{
+    margin-bottom: 4px;
+    background-color: #FFD000;
+    padding:15px;
+    border-radius: 4px;
+}
+
+
+
+/* Estilo Campeonato e Titulos & Eventos */
+ 
+.event-camp{
+    padding: 20px;
+    /* background-color: #FFD000; */
+    width:100%;
+    height:auto;
+
+  
+}
+
+.event-camp .event{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.event-camp .event div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.event-camp .event .info-event h3{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.event-camp .event .info-event p{
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.event-camp .event .img-event{
+    width: 70vh;
+    height: auto;
+
+    
+}
+
+
+
+
+
+
+/* Estilo Modalidades */
+
+.modalidades{
+    padding: 20px;
+    background-color: #23231b;
+    color:#FFD000;
+    width:100%;
+    height:auto;
+    
+}
+
+
+.modalidades .modalidades-container{
+    display: flex;
+}
+
+.modalidades .modalidades-container div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2px;
+}
+
+.modalidades .modalidades-container ul{
+    list-style: none;
+    font-size: larger;
+    color: #000;
+}
+
+.modalidades .modalidades-container ul li{
+    margin-bottom: 4px;
+    background-color: #FFD000;
+    padding:15px;
+    border-radius: 4px;
+}
+
+
+
+/* Estilo Insta */
+.insta{
+    padding: 20px;
+    background-color: #23231b;
+    color:#FFD000;
+    width:100%;
+    height:400px;
+  
+
+  
+}
+
+/* Estilo Contato */
+.contato{
+    padding: 20px;
+    /* background-color: #FFD000; */
+    width:100%;
+    height:auto;
+   
+    
+  
+}
+
+.contato h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.contato ul {
+    list-style: none;
+    font-size: larger;
+    color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+.contato ul li{
+    display: inline;
+    
+}
+
+
+
+.contato ul img{
+    width: 70px;
+    height: auto;
+    margin-right: 20px;
+
+    
+}
+
+/* Estilo Rodape */
+footer{
+    padding: 20px;
+    background-color: #23231b;
+    color:#FFD000;
+    width:100%;
+   
+  
+}
+
+footer p a{
+    text-decoration: none;
+    color: #FFD000;
+    font-weight: bold;
+}
